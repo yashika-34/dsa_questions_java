@@ -42,8 +42,8 @@ public class TreeNode {
 |---|---|:---:|:---:|:---:|
 | [`TreeNode.java`](TreeNode.java) | Node structure & Postorder Traversal | LeetCode 145 | $O(N)$ | $O(H)$ recursion stack |
 | [`Main.java`](Main.java) | Tree construction & Inorder Traversal driver | LeetCode 94 | $O(N)$ | $O(H)$ recursion stack |
-| [`104_Maximum_depth_ofTree.java`](104_Maximum_depth_ofTree.java) | Maximum Depth of Binary Tree | LeetCode 104 | $O(N)$ | $O(H)$ |
-| [`236_minAncestor.java`](236_minAncestor.java) | Lowest Common Ancestor (LCA) | LeetCode 236 | $O(N)$ | $O(H)$ |
+| [`MaximumDepthOfTree.java`](MaximumDepthOfTree.java) | Maximum Depth of Binary Tree | LeetCode 104 | $O(N)$ | $O(H)$ |
+| [`LowestCommonAncestor.java`](LowestCommonAncestor.java) | Lowest Common Ancestor (LCA) | LeetCode 236 | $O(N)$ | $O(H)$ |
 
 *(Where $N$ is the number of nodes and $H$ is the tree height: $O(\log N)$ for balanced trees, $O(N)$ for skewed trees).*
 

@@ -1,6 +1,6 @@
 
 
-public class Max_product {
+public class MaxProduct {
 
 	public static void main(String[] args) {
 		int arr[]= {2,3,-2,4};

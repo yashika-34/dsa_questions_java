@@ -1,6 +1,6 @@
 
 
-public class Second_Largest {
+public class SecondLargest {
 
 	public static void main(String[] args) {
 		int arr[]= {10,5,8,10,3};

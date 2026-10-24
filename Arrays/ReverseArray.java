@@ -17,6 +17,6 @@ class Solution {
     }
 }
 
-public class reverse {
+public class ReverseArray {
     
 }

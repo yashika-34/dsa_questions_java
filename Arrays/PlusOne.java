@@ -1,4 +1,4 @@
-public class plus_one {
+public class PlusOne {
     
 }
 class Solution {

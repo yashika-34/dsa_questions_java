@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-public class Longest_Consecutive_sequence {
+public class LongestConsecutiveSequence {
 
 	public static void main(String[] args) {
 		int []arr= {100,4,200,1,3,2};

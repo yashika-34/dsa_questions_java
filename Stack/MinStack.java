@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class minimum {
+public class MinStack {
     public static int min(Stack<Integer> s) {
         int minimum = Integer.MAX_VALUE;
 

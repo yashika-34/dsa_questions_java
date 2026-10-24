@@ -1,6 +1,6 @@
 
 
-public class SubArray_sum_equals_k {
+public class SubarraySumEqualsK {
 
 	public static void main(String[] args) {
 		int []nums= {1,1,1};

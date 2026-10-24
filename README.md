@@ -4,6 +4,7 @@
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/Problems%20Solved-65%2B-brightgreen?style=for-the-badge" alt="Problems Solved" />
   <img src="https://img.shields.io/badge/Topics-7-blue?style=for-the-badge" alt="Topics" />
+  <img src="https://img.shields.io/badge/Architecture-Modular%20Guides-purple?style=for-the-badge" alt="Modular Architecture" />
   <img src="https://img.shields.io/badge/Status-Actively%20Practicing-orange?style=for-the-badge" alt="Status" />
 </p>
 
@@ -13,15 +14,17 @@ A structured, well-organized repository of **Data Structures and Algorithms (DSA
 
 ## 📊 Topics & Progress
 
-| Topic | Directory | Problems Solved | Documentation | Key Highlights |
+Every topic folder contains its own dedicated technical study guide and problem breakdown:
+
+| Topic | Directory | Problems Solved | Topic Study Guide | Key Highlights |
 |:---|:---:|:---:|:---:|:---|
-| 📦 **Arrays** | [`Arrays/`](./Arrays) | 30 | Available | Two Pointers, Sliding Window, Prefix Sums, Kadane's |
-| 🔗 **Linked Lists** | [`LinkedList/`](./LinkedList) | 10 | Available | Floyd's Cycle, k-Group Reversal, Merging & Two Pointers |
-| 📚 **Stack** | [`Stack/`](./Stack) | 9 | [`Stack/Readme.MD`](./Stack/Readme.MD) | Monotonic Stack, Infix/Postfix, Bracket Matching |
-| 🔤 **Strings** | [`Strings/`](./Strings) | 3 | Available | Anagrams, String Parsing, Pattern Matching |
-| 🌳 **Trees** | [`Trees/`](./Trees) | 4 | Available | Binary Tree Traversals, LCA, Maximum Depth |
+| 📦 **Arrays** | [`Arrays/`](./Arrays) | 30 | [`Arrays/README.md`](./Arrays/README.md) | Two Pointers, Sliding Window, Prefix Sums, Kadane's |
+| 🔗 **Linked Lists** | [`LinkedList/`](./LinkedList) | 10 | [`LinkedList/README.md`](./LinkedList/README.md) | Floyd's Cycle, k-Group Reversal, Merging & Two Pointers |
+| 📚 **Stack** | [`Stack/`](./Stack) | 9 | [`Stack/README.md`](./Stack/README.md) | Monotonic Stack, Infix/Postfix, Bracket Matching |
+| 🔤 **Strings** | [`Strings/`](./Strings) | 3 | [`Strings/README.md`](./Strings/README.md) | Anagrams, String Parsing, Pattern Matching |
+| 🌳 **Trees** | [`Trees/`](./Trees) | 4 | [`Trees/README.md`](./Trees/README.md) | Binary Tree Traversals, LCA, Maximum Depth |
 | ⛰️ **Heaps** | [`heaps/`](./heaps) | 8 | [`heaps/README.md`](./heaps/README.md) | Min/Max Heap, Heap Sort, Heapify, K Largest Elements |
-| 🔄 **Recursion** | [`recursion/`](./recursion) | 5 | Available | Backtracking, N-Queens, Sudoku Solver, Subsets |
+| 🔄 **Recursion** | [`recursion/`](./recursion) | 5 | [`recursion/README.md`](./recursion/README.md) | Backtracking, N-Queens, Sudoku Solver, Subsets |
 | **Total** | | **69** | | |
 
 ---
@@ -45,74 +48,74 @@ dsa_questions_java/
 ## 📑 Problem Index
 
 <details open>
-<summary><b>📦 Arrays (30 Solutions)</b></summary>
+<summary><b>📦 Arrays (30 Solutions) — <a href="Arrays/README.md">View Topic Guide</a></b></summary>
 <br>
 
 | Problem / File | Concept / LeetCode Equivalent |
 |---|---|
-| [`Two_sum.java`](Arrays/Two_sum.java) | LeetCode 1: Two Sum (Hash Map / Two Pointers) |
-| [`53_max_subarray.java`](Arrays/53_max_subarray.java) | LeetCode 53: Maximum Subarray (Kadane's Algorithm) |
-| [`Maximum_subarray_sum.java`](Arrays/Maximum_subarray_sum.java) | Kadane's Algorithm for Maximum Subarray Sum |
-| [`Max_product.java`](Arrays/Max_product.java) | LeetCode 152: Maximum Product Subarray |
-| [`best_time_to_buy_and_sell.java`](Arrays/best_time_to_buy_and_sell.java) | LeetCode 121: Best Time to Buy and Sell Stock |
-| [`Majority_element.java`](Arrays/Majority_element.java) | LeetCode 169: Majority Element (Boyer-Moore Voting) |
-| [`Longest_Consecutive_sequence.java`](Arrays/Longest_Consecutive_sequence.java) | LeetCode 128: Longest Consecutive Sequence |
-| [`SubArray_sum_equals_k.java`](Arrays/SubArray_sum_equals_k.java) | LeetCode 560: Subarray Sum Equals K (Prefix Sum) |
-| [`targetsum1477.java`](Arrays/targetsum1477.java) | LeetCode 1477: Non-overlapping Subarrays with Target Sum |
-| [`1480_Running_sum.java`](Arrays/1480_Running_sum.java) | LeetCode 1480: Running Sum of 1D Array |
-| [`303_RangeSumQuery.java`](Arrays/303_RangeSumQuery.java) | LeetCode 303: Range Sum Query - Immutable |
-| [`35_search_Insert.java`](Arrays/35_search_Insert.java) | LeetCode 35: Search Insert Position (Binary Search) |
-| [`sqrt.java`](Arrays/sqrt.java) | LeetCode 69: Sqrt(x) via Binary Search |
-| [`48_rotate_image.java`](Arrays/48_rotate_image.java) | LeetCode 48: Rotate Image / 90° Matrix Rotation |
-| [`Move_Zeros.java`](Arrays/Move_Zeros.java) | LeetCode 283: Move Zeroes (In-place) |
-| [`Remove_duplicates.java`](Arrays/Remove_duplicates.java) | LeetCode 26: Remove Duplicates from Sorted Array |
-| [`Missing_number.java`](Arrays/Missing_number.java) | LeetCode 268: Missing Number (XOR / Sum Formula) |
-| [`Single_number.java`](Arrays/Single_number.java) | LeetCode 136: Single Number (Bit Manipulation) |
-| [`Max_ConsecutiveOnes.java`](Arrays/Max_ConsecutiveOnes.java) | LeetCode 485: Max Consecutive Ones |
-| [`palindromeNumber.java`](Arrays/palindromeNumber.java) | LeetCode 9: Palindrome Number |
-| [`plus_one.java`](Arrays/plus_one.java) | LeetCode 66: Plus One |
-| [`91_plus_one.java`](Arrays/91_plus_one.java) | Array Plus One Variant |
+| [`TwoSum.java`](Arrays/TwoSum.java) | LeetCode 1: Two Sum (Hash Map / Two Pointers) |
+| [`MaximumSubarray.java`](Arrays/MaximumSubarray.java) | LeetCode 53: Maximum Subarray (Kadane's Algorithm) |
+| [`MaximumSubarraySum.java`](Arrays/MaximumSubarraySum.java) | Kadane's Algorithm for Maximum Subarray Sum |
+| [`MaxProduct.java`](Arrays/MaxProduct.java) | LeetCode 152: Maximum Product Subarray |
+| [`BestTimeToBuyAndSell.java`](Arrays/BestTimeToBuyAndSell.java) | LeetCode 121: Best Time to Buy and Sell Stock |
+| [`MajorityElement.java`](Arrays/MajorityElement.java) | LeetCode 169: Majority Element (Boyer-Moore Voting) |
+| [`LongestConsecutiveSequence.java`](Arrays/LongestConsecutiveSequence.java) | LeetCode 128: Longest Consecutive Sequence |
+| [`SubarraySumEqualsK.java`](Arrays/SubarraySumEqualsK.java) | LeetCode 560: Subarray Sum Equals K (Prefix Sum) |
+| [`TargetSum1477.java`](Arrays/TargetSum1477.java) | LeetCode 1477: Non-overlapping Subarrays with Target Sum |
+| [`RunningSum.java`](Arrays/RunningSum.java) | LeetCode 1480: Running Sum of 1D Array |
+| [`RangeSumQuery.java`](Arrays/RangeSumQuery.java) | LeetCode 303: Range Sum Query - Immutable |
+| [`SearchInsertPosition.java`](Arrays/SearchInsertPosition.java) | LeetCode 35: Search Insert Position (Binary Search) |
+| [`Sqrt.java`](Arrays/Sqrt.java) | LeetCode 69: Sqrt(x) via Binary Search |
+| [`RotateImage.java`](Arrays/RotateImage.java) | LeetCode 48: Rotate Image / 90° Matrix Rotation |
+| [`MoveZeroes.java`](Arrays/MoveZeroes.java) | LeetCode 283: Move Zeroes (In-place) |
+| [`RemoveDuplicates.java`](Arrays/RemoveDuplicates.java) | LeetCode 26: Remove Duplicates from Sorted Array |
+| [`MissingNumber.java`](Arrays/MissingNumber.java) | LeetCode 268: Missing Number (XOR / Sum Formula) |
+| [`SingleNumber.java`](Arrays/SingleNumber.java) | LeetCode 136: Single Number (Bit Manipulation) |
+| [`MaxConsecutiveOnes.java`](Arrays/MaxConsecutiveOnes.java) | LeetCode 485: Max Consecutive Ones |
+| [`PalindromeNumber.java`](Arrays/PalindromeNumber.java) | LeetCode 9: Palindrome Number |
+| [`PlusOne.java`](Arrays/PlusOne.java) | LeetCode 66: Plus One |
+| [`PlusOneVariant.java`](Arrays/PlusOneVariant.java) | Array Plus One Variant |
 | [`Largest.java`](Arrays/Largest.java) | Find Largest Element in Array |
-| [`Second_Largest.java`](Arrays/Second_Largest.java) | Find Second Largest Element in Array |
-| [`reverse.java`](Arrays/reverse.java) | Reverse an Array (Two Pointer Technique) |
-| [`check_subarray.java`](Arrays/check_subarray.java) | Check Subarray Existence |
-| [`1752_CheckArrayisSortedorRotataed.java`](Arrays/1752_CheckArrayisSortedorRotataed.java) | LeetCode 1752: Check if Array is Sorted and Rotated |
-| [`1621_noofrsubsetsKOverlapping.java`](Arrays/1621_noofrsubsetsKOverlapping.java) | LeetCode 1621: Number of Sets of K Non-Overlapping Line Segments |
-| [`3903question.java`](Arrays/3903question.java) | Array Problem Practice |
-| [`496_Next_Greater.cpp`](Arrays/496_Next_Greater.cpp) | Next Greater Element I (C++ Solution) |
+| [`SecondLargest.java`](Arrays/SecondLargest.java) | Find Second Largest Element in Array |
+| [`ReverseArray.java`](Arrays/ReverseArray.java) | Reverse an Array (Two Pointer Technique) |
+| [`CheckSubarray.java`](Arrays/CheckSubarray.java) | Check Subarray Existence |
+| [`CheckArraySortedAndRotated.java`](Arrays/CheckArraySortedAndRotated.java) | LeetCode 1752: Check if Array is Sorted and Rotated |
+| [`SubsetsKOverlapping.java`](Arrays/SubsetsKOverlapping.java) | LeetCode 1621: Number of Sets of K Non-Overlapping Line Segments |
+| [`Question3903.java`](Arrays/Question3903.java) | Array Problem Practice |
+| [`NextGreaterElement.cpp`](Arrays/NextGreaterElement.cpp) | Next Greater Element I (C++ Solution) |
 
 </details>
 
 <details open>
-<summary><b>🔗 Linked Lists (10 Solutions)</b></summary>
+<summary><b>🔗 Linked Lists (10 Solutions) — <a href="LinkedList/README.md">View Topic Guide</a></b></summary>
 <br>
 
 | Problem / File | Concept / LeetCode Equivalent |
 |---|---|
-| [`ReverseLinkedList206.java`](LinkedList/ReverseLinkedList206.java) | LeetCode 206: Reverse Linked List (Iterative) |
-| [`ReverseByK25.java`](LinkedList/ReverseByK25.java) | LeetCode 25: Reverse Nodes in k-Group |
-| [`detectAloop.java`](LinkedList/detectAloop.java) | LeetCode 141: Linked List Cycle (Floyd's Tortoise & Hare) |
-| [`palindromell.java`](LinkedList/palindromell.java) | LeetCode 234: Palindrome Linked List |
-| [`mergell.java`](LinkedList/mergell.java) | LeetCode 21: Merge Two Sorted Lists |
-| [`addTwo.java`](LinkedList/addTwo.java) | LeetCode 2: Add Two Numbers |
-| [`RemoveNthfromEnd.java`](LinkedList/RemoveNthfromEnd.java) | LeetCode 19: Remove Nth Node From End of List |
-| [`removeLLelements.java`](LinkedList/removeLLelements.java) | LeetCode 203: Remove Linked List Elements |
-| [`odd_Evenll.java`](LinkedList/odd_Evenll.java) | LeetCode 328: Odd Even Linked List |
+| [`ReverseLinkedList.java`](LinkedList/ReverseLinkedList.java) | LeetCode 206: Reverse Linked List (Iterative) |
+| [`ReverseByK.java`](LinkedList/ReverseByK.java) | LeetCode 25: Reverse Nodes in k-Group |
+| [`DetectLoop.java`](LinkedList/DetectLoop.java) | LeetCode 141: Linked List Cycle (Floyd's Tortoise & Hare) |
+| [`PalindromeLinkedList.java`](LinkedList/PalindromeLinkedList.java) | LeetCode 234: Palindrome Linked List |
+| [`MergeLinkedList.java`](LinkedList/MergeLinkedList.java) | LeetCode 21: Merge Two Sorted Lists |
+| [`AddTwoNumbers.java`](LinkedList/AddTwoNumbers.java) | LeetCode 2: Add Two Numbers |
+| [`RemoveNthFromEnd.java`](LinkedList/RemoveNthFromEnd.java) | LeetCode 19: Remove Nth Node From End of List |
+| [`RemoveElements.java`](LinkedList/RemoveElements.java) | LeetCode 203: Remove Linked List Elements |
+| [`OddEvenLinkedList.java`](LinkedList/OddEvenLinkedList.java) | LeetCode 328: Odd Even Linked List |
 | [`SortColors.java`](LinkedList/SortColors.java) | LeetCode 75: Sort Colors / Three-Way Partitioning |
 
 </details>
 
 <details open>
-<summary><b>📚 Stack (9 Solutions) — <a href="Stack/Readme.MD">View Module Documentation</a></b></summary>
+<summary><b>📚 Stack (9 Solutions) — <a href="Stack/README.md">View Topic Guide</a></b></summary>
 <br>
 
 | Problem / File | Concept / Description |
 |---|---|
 | [`StackArray.java`](Stack/StackArray.java) | Stack implementation from scratch using dynamic arrays |
-| [`Stackll.java`](Stack/Stackll.java) | Stack implementation from scratch using Linked List nodes |
-| [`validParethesis.java`](Stack/validParethesis.java) | LeetCode 20: Valid Parentheses / Bracket Matching |
-| [`nextGreater.java`](Stack/nextGreater.java) | Next Greater Element using Monotonic Stack |
-| [`minimum.java`](Stack/minimum.java) | Min Stack: Retrieve minimum element in $O(1)$ time |
+| [`StackLinkedList.java`](Stack/StackLinkedList.java) | Stack implementation from scratch using Linked List nodes |
+| [`ValidParentheses.java`](Stack/ValidParentheses.java) | LeetCode 20: Valid Parentheses / Bracket Matching |
+| [`NextGreater.java`](Stack/NextGreater.java) | Next Greater Element using Monotonic Stack |
+| [`MinStack.java`](Stack/MinStack.java) | Min Stack: Retrieve minimum element in $O(1)$ time |
 | [`InfixtoPostfix.java`](Stack/InfixtoPostfix.java) | Operator precedence and Infix to Postfix conversion |
 | [`EvaluatePostfix.java`](Stack/EvaluatePostfix.java) | Postfix arithmetic expression evaluation |
 | [`EvaluatePrefix.java`](Stack/EvaluatePrefix.java) | Prefix expression evaluation |
@@ -121,7 +124,7 @@ dsa_questions_java/
 </details>
 
 <details open>
-<summary><b>⛰️ Heaps & Priority Queues (8 Solutions) — <a href="heaps/README.md">View Module Documentation</a></b></summary>
+<summary><b>⛰️ Heaps & Priority Queues (8 Solutions) — <a href="heaps/README.md">View Topic Guide</a></b></summary>
 <br>
 
 | Problem / File | Description | Time Complexity |
@@ -138,41 +141,41 @@ dsa_questions_java/
 </details>
 
 <details open>
-<summary><b>🔄 Recursion & Backtracking (5 Solutions)</b></summary>
+<summary><b>🔄 Recursion & Backtracking (5 Solutions) — <a href="recursion/README.md">View Topic Guide</a></b></summary>
 <br>
 
 | Problem / File | Concept / LeetCode Equivalent |
 |---|---|
-| [`Nqueens.java`](recursion/Nqueens.java) | LeetCode 51: N-Queens Problem (Backtracking & Board Validation) |
-| [`sudoku.java`](recursion/sudoku.java) | LeetCode 37: Sudoku Solver (Backtracking) |
-| [`subsets78.java`](recursion/subsets78.java) | LeetCode 78: Subsets / Power Set Generation |
-| [`subests90.java`](recursion/subests90.java) | LeetCode 90: Subsets II (Handling Duplicate Elements) |
-| [`permutation78.java`](recursion/permutation78.java) | LeetCode 46: Permutations of an Array |
+| [`NQueens.java`](recursion/NQueens.java) | LeetCode 51: N-Queens Problem (Backtracking & Board Validation) |
+| [`SudokuSolver.java`](recursion/SudokuSolver.java) | LeetCode 37: Sudoku Solver (Backtracking) |
+| [`Subsets.java`](recursion/Subsets.java) | LeetCode 78: Subsets / Power Set Generation |
+| [`SubsetsWithDup.java`](recursion/SubsetsWithDup.java) | LeetCode 90: Subsets II (Handling Duplicate Elements) |
+| [`Permutations.java`](recursion/Permutations.java) | LeetCode 46: Permutations of an Array |
 
 </details>
 
 <details open>
-<summary><b>🌳 Binary Trees (4 Solutions)</b></summary>
+<summary><b>🌳 Binary Trees (4 Solutions) — <a href="Trees/README.md">View Topic Guide</a></b></summary>
 <br>
 
 | Problem / File | Concept / LeetCode Equivalent |
 |---|---|
 | [`TreeNode.java`](Trees/TreeNode.java) | Binary Tree Node class definition |
 | [`Main.java`](Trees/Main.java) | Tree construction & Traversal Drivers (Inorder, Preorder, Postorder) |
-| [`104_Maximum_depth_ofTree.java`](Trees/104_Maximum_depth_ofTree.java) | LeetCode 104: Maximum Depth of Binary Tree |
-| [`236_minAncestor.java`](Trees/236_minAncestor.java) | LeetCode 236: Lowest Common Ancestor (LCA) |
+| [`MaximumDepthOfTree.java`](Trees/MaximumDepthOfTree.java) | LeetCode 104: Maximum Depth of Binary Tree |
+| [`LowestCommonAncestor.java`](Trees/LowestCommonAncestor.java) | LeetCode 236: Lowest Common Ancestor (LCA) |
 
 </details>
 
 <details open>
-<summary><b>🔤 Strings (3 Solutions)</b></summary>
+<summary><b>🔤 Strings (3 Solutions) — <a href="Strings/README.md">View Topic Guide</a></b></summary>
 <br>
 
 | Problem / File | Concept / LeetCode Equivalent |
 |---|---|
 | [`ValidAnagrams.java`](Strings/ValidAnagrams.java) | LeetCode 242: Valid Anagram (Frequency Array) |
-| [`String_toatoi.java`](Strings/String_toatoi.java) | LeetCode 8: String to Integer (atoi) |
-| [`28_find_the%20index.java`](Strings/28_find_the%20index.java) | LeetCode 28: Find the Index of the First Occurrence in a String |
+| [`StringToAtoi.java`](Strings/StringToAtoi.java) | LeetCode 8: String to Integer (atoi) |
+| [`FindIndex.java`](Strings/FindIndex.java) | LeetCode 28: Find the Index of the First Occurrence in a String |
 
 </details>
 
@@ -198,10 +201,10 @@ cd dsa_questions_java
 ### 2. Standalone Programs (e.g., Arrays, LinkedList, Stack, Strings, Recursion)
 ```bash
 # Compile
-javac Arrays/Two_sum.java
+javac Arrays/TwoSum.java
 
 # Run
-java Arrays.Two_sum
+java Arrays.TwoSum
 ```
 
 ### 3. Packaged Programs (e.g., Heaps)

@@ -20,6 +20,6 @@ class Solution {
     }
 }
 
-public class subsets78 {
+public class Subsets {
     
 }

@@ -21,6 +21,6 @@ class Solution {
     }
 }
 
-public class subests90 {
+public class SubsetsWithDup {
     
 }
