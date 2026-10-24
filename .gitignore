@@ -1,0 +1,30 @@
+# Compiled Java class files
+*.class
+
+# Log files
+*.log
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Executables
+*.exe
+*.out
+
+# VS Code directory (keep config, ignore cache/history)
+.vscode/.browse.c_cpp.db*
+.vscode/*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

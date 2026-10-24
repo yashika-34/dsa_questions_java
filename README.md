@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/Problems%20Solved-65%2B-brightgreen?style=for-the-badge" alt="Problems Solved" />
   <img src="https://img.shields.io/badge/Topics-7-blue?style=for-the-badge" alt="Topics" />
   <img src="https://img.shields.io/badge/Architecture-Modular%20Guides-purple?style=for-the-badge" alt="Modular Architecture" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License" />
   <img src="https://img.shields.io/badge/Status-Actively%20Practicing-orange?style=for-the-badge" alt="Status" />
 </p>
 
@@ -16,16 +17,30 @@ A structured, well-organized repository of **Data Structures and Algorithms (DSA
 
 Every topic folder contains its own dedicated technical study guide and problem breakdown:
 
-| Topic | Directory | Problems Solved | Topic Study Guide | Key Highlights |
+| Topic | Directory | Problems Solved | Documentation | Key Highlights |
 |:---|:---:|:---:|:---:|:---|
-| 📦 **Arrays** | [`Arrays/`](./Arrays) | 30 | [`Arrays/README.md`](./Arrays/README.md) | Two Pointers, Sliding Window, Prefix Sums, Kadane's |
-| 🔗 **Linked Lists** | [`LinkedList/`](./LinkedList) | 10 | [`LinkedList/README.md`](./LinkedList/README.md) | Floyd's Cycle, k-Group Reversal, Merging & Two Pointers |
-| 📚 **Stack** | [`Stack/`](./Stack) | 9 | [`Stack/README.md`](./Stack/README.md) | Monotonic Stack, Infix/Postfix, Bracket Matching |
-| 🔤 **Strings** | [`Strings/`](./Strings) | 3 | [`Strings/README.md`](./Strings/README.md) | Anagrams, String Parsing, Pattern Matching |
-| 🌳 **Trees** | [`Trees/`](./Trees) | 4 | [`Trees/README.md`](./Trees/README.md) | Binary Tree Traversals, LCA, Maximum Depth |
-| ⛰️ **Heaps** | [`heaps/`](./heaps) | 8 | [`heaps/README.md`](./heaps/README.md) | Min/Max Heap, Heap Sort, Heapify, K Largest Elements |
-| 🔄 **Recursion** | [`recursion/`](./recursion) | 5 | [`recursion/README.md`](./recursion/README.md) | Backtracking, N-Queens, Sudoku Solver, Subsets |
-| **Total** | | **69** | | |
+| 📦 **Arrays** | [`Arrays/`](./Arrays) | 30 | [📖 View Documentation](./Arrays/README.md) | Two Pointers, Sliding Window, Prefix Sums, Kadane's |
+| 🔗 **Linked Lists** | [`LinkedList/`](./LinkedList) | 10 | [📖 View Documentation](./LinkedList/README.md) | Floyd's Cycle, k-Group Reversal, Merging & Two Pointers |
+| 📚 **Stack** | [`Stack/`](./Stack) | 9 | [📖 View Documentation](./Stack/README.md) | Monotonic Stack, Infix/Postfix, Bracket Matching |
+| 🔤 **Strings** | [`Strings/`](./Strings) | 3 | [📖 View Documentation](./Strings/README.md) | Anagrams, String Parsing, Pattern Matching |
+| 🌳 **Trees** | [`Trees/`](./Trees) | 4 | [📖 View Documentation](./Trees/README.md) | Binary Tree Traversals, LCA, Maximum Depth |
+| ⛰️ **Heaps** | [`heaps/`](./heaps) | 8 | [📖 View Documentation](./heaps/README.md) | Min/Max Heap, Heap Sort, Heapify, K Largest Elements |
+| 🔄 **Recursion** | [`recursion/`](./recursion) | 5 | [📖 View Documentation](./recursion/README.md) | Backtracking, N-Queens, Sudoku Solver, Subsets |
+| **Total** | | **69** | **7 Comprehensive Guides** | |
+
+---
+
+## 📖 Topic Documentation & Revision Guides
+
+Each topic folder includes a standalone technical guide containing theory, core operations, complexity tables, and implementation details:
+
+- [**📦 Arrays Documentation**](./Arrays/README.md): Two pointers, sliding window technique, Kadane's algorithm, prefix sums, and Boyer-Moore voting.
+- [**🔗 Linked Lists Documentation**](./LinkedList/README.md): Singly linked list architecture, Floyd's cycle detection, in-place 3-pointer reversal, and k-group reversal.
+- [**📚 Stack Documentation**](./Stack/README.md): Array & Linked List stack implementations, monotonic stacks for Next Greater Element, and arithmetic expression evaluation.
+- [**🔤 Strings Documentation**](./Strings/README.md): Character frequency arrays, `atoi` parsing with overflow detection, and pattern matching.
+- [**🌳 Binary Trees Documentation**](./Trees/README.md): `TreeNode` structure, recursive DFS traversals (Inorder, Preorder, Postorder), maximum depth, and Lowest Common Ancestor.
+- [**⛰️ Heaps Documentation**](./heaps/README.md): Complete binary tree array indexing, Min/Max Heap from scratch, downward heapify, $O(N)$ build heap, and Heap Sort.
+- [**🔄 Recursion Documentation**](./recursion/README.md): State-space decision trees (include/exclude), and standard backtracking templates (N-Queens, Sudoku).
 
 ---
 
@@ -33,14 +48,14 @@ Every topic folder contains its own dedicated technical study guide and problem 
 
 ```text
 dsa_questions_java/
-├── Arrays/          # Array manipulations, searching & subarray problems
-├── LinkedList/      # Singly linked lists, cycle detection & reversals
-├── Stack/           # Array/LL stacks, expression evaluation & Monotonic Stack
-├── Strings/         # String transformations, anagrams & parsing
-├── Trees/           # Binary trees, traversals & ancestor queries
-├── heaps/           # Complete Min/Max heap implementations & Heap Sort
-├── recursion/       # Backtracking & combinatorial search problems
-└── README.md
+├── Arrays/          # 30 problems + README.md (Two Pointers, Prefix Sums, Kadane's)
+├── LinkedList/      # 10 problems + README.md (Cycle Detection, Reversals)
+├── Stack/           # 9 problems  + README.md (Monotonic Stack, Infix/Postfix)
+├── Strings/         # 3 problems  + README.md (Anagrams, String Parsing)
+├── Trees/           # 4 problems  + README.md (DFS Traversals, LCA, Max Depth)
+├── heaps/           # 8 problems  + README.md (Min/Max Heap, Heap Sort)
+├── recursion/       # 5 problems  + README.md (N-Queens, Sudoku, Subsets)
+└── README.md        # Main showcase & centralized problem index
 ```
 
 ---
@@ -82,7 +97,7 @@ dsa_questions_java/
 | [`CheckArraySortedAndRotated.java`](Arrays/CheckArraySortedAndRotated.java) | LeetCode 1752: Check if Array is Sorted and Rotated |
 | [`SubsetsKOverlapping.java`](Arrays/SubsetsKOverlapping.java) | LeetCode 1621: Number of Sets of K Non-Overlapping Line Segments |
 | [`Question3903.java`](Arrays/Question3903.java) | Array Problem Practice |
-| [`NextGreaterElement.cpp`](Arrays/NextGreaterElement.cpp) | Next Greater Element I (C++ Solution) |
+| [`NextGreaterElement.java`](Arrays/NextGreaterElement.java) | LeetCode 496: Next Greater Element I (Monotonic Stack) |
 
 </details>
 

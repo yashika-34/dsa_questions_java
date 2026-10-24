@@ -55,7 +55,7 @@ This folder contains my solutions and practice problems on **Arrays and Matrix M
 | [`CheckArraySortedAndRotated.java`](CheckArraySortedAndRotated.java) | Inversion count rotation check | LeetCode 1752 | $O(N)$ | $O(1)$ |
 | [`SubsetsKOverlapping.java`](SubsetsKOverlapping.java) | Non-overlapping segment subsets | LeetCode 1621 | $O(N \cdot K)$ | $O(N \cdot K)$ |
 | [`Question3903.java`](Question3903.java) | Assessment question | Practice | $O(N)$ | $O(1)$ |
-| [`NextGreaterElement.cpp`](NextGreaterElement.cpp) | Next Greater Element (C++) | LeetCode 496 | $O(N)$ | $O(N)$ |
+| [`NextGreaterElement.java`](NextGreaterElement.java) | Next Greater Element I (Monotonic Stack) | LeetCode 496 | $O(N)$ | $O(N)$ |
 
 ---
 
