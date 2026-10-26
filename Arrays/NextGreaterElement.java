@@ -1,7 +1,10 @@
+package Arrays;
+
 import java.util.*;
 
-class Solution {
-    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+public class NextGreaterElement {
+
+    public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map = new HashMap<>(); // stores next greater for each element in nums2
         Stack<Integer> stack = new Stack<>();
 
@@ -28,16 +31,12 @@ class Solution {
 
         return result;
     }
-}
 
-public class NextGreaterElement {
     public static void main(String[] args) {
-        Solution sol = new Solution();
-
         int[] nums1 = {4, 1, 2};
         int[] nums2 = {1, 3, 4, 2};
 
-        int[] ans = sol.nextGreaterElement(nums1, nums2);
+        int[] ans = nextGreaterElement(nums1, nums2);
         System.out.println("Input nums1: " + Arrays.toString(nums1));
         System.out.println("Input nums2: " + Arrays.toString(nums2));
         System.out.println("Next Greater Elements: " + Arrays.toString(ans));

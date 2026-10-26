@@ -1,10 +1,14 @@
+package Stack;
 
 import java.util.Stack;
-class Result {
-    static int minReversal(String expr) {
+
+public class MinReversal {
+
+    public static int minReversal(String expr) {
         if (expr.length() % 2 != 0) {
-            return -1;
+            return -1; // Odd length expressions cannot be balanced
         }
+
         Stack<Character> st = new Stack<>();
         for (int i = 0; i < expr.length(); i++) {
             char ch = expr.charAt(i);
@@ -18,6 +22,7 @@ class Result {
                 }
             }
         }
+
         int open = 0;
         int close = 0;
         while (!st.isEmpty()) {
@@ -27,6 +32,15 @@ class Result {
                 close++;
             }
         }
+
         return (open + 1) / 2 + (close + 1) / 2;
+    }
+
+    public static void main(String[] args) {
+        String s1 = "][][";
+        String s2 = "]]][[[";
+
+        System.out.println("Min reversals for \"" + s1 + "\": " + minReversal(s1));
+        System.out.println("Min reversals for \"" + s2 + "\": " + minReversal(s2));
     }
 }

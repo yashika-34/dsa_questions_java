@@ -1,34 +1,8 @@
+package LinkedList;
 
-/*
-LeetCode 206 - Reverse Linked List
+public class ReverseLinkedList {
 
-Approach:
-1. Maintain two pointers: prev and curr.
-2. Reverse the link of each node.
-3. Move both pointers forward.
-4. Return prev as the new head.
-
-Time Complexity: O(n)
-Space Complexity: O(1)
-*/
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {}
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class Solution {
-    public ListNode reverseList(ListNode head) {
+    public static ListNode reverseList(ListNode head) {
         ListNode curr = head;
         ListNode prev = null;
 
@@ -40,5 +14,25 @@ class Solution {
         }
 
         return prev;
+    }
+
+    public static void printList(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val + (head.next != null ? " -> " : ""));
+            head = head.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        // 1 -> 2 -> 3 -> 4 -> 5
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+
+        System.out.print("Original List: ");
+        printList(head);
+
+        ListNode reversed = reverseList(head);
+        System.out.print("Reversed List: ");
+        printList(reversed); // 5 -> 4 -> 3 -> 2 -> 1
     }
 }

@@ -1,20 +1,25 @@
+package Arrays;
+
+import java.util.Arrays;
+
 public class PlusOne {
-    
-}
-class Solution {
-    public int[] plusOne(int[] digits) {
-        for(int i = digits.length - 1; i >= 0; i--) {
-            if(digits[i] < 9) {
+
+    public static int[] plusOne(int[] digits) {
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
                 digits[i]++;
-                return digits; // done
+                return digits;
             }
-            digits[i] = 0; // carry
+            digits[i] = 0;
         }
 
-        // If all digits were 9 → need extra space
         int[] result = new int[digits.length + 1];
         result[0] = 1;
-
         return result;
+    }
+
+    public static void main(String[] args) {
+        int[] digits = {4, 3, 2, 1};
+        System.out.println("Plus one on [4, 3, 2, 1]: " + Arrays.toString(plusOne(digits))); // [4, 3, 2, 2]
     }
 }

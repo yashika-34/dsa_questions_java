@@ -1,12 +1,24 @@
-class Solution {
-    public int maxSubArray(int[] nums) {
-        int currsum=nums[0];
-        int maxsum=nums[0];
-        for(int i=1; i<nums.length; i++){
-            currsum=Math.max(nums[i],nums[i]+currsum);
-            maxsum=Math.max(maxsum,currsum);
+package Arrays;
+
+public class MaximumSubarray {
+
+    /**
+     * Kadane's Algorithm to find maximum subarray sum in O(N) time and O(1) space.
+     */
+    public static int maxSubArray(int[] nums) {
+        int currSum = nums[0];
+        int maxSum = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            currSum = Math.max(nums[i], nums[i] + currSum);
+            maxSum = Math.max(maxSum, currSum);
         }
-        return maxsum;
-        
+
+        return maxSum;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        System.out.println("Maximum Subarray Sum: " + maxSubArray(nums)); // Output: 6 ([4, -1, 2, 1])
     }
 }

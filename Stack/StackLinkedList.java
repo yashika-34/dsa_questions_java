@@ -1,36 +1,59 @@
+package Stack;
 
+public class StackLinkedList {
 
-class LinkList
-{
-  public int data; // data item
-  public LinkList next; // next link in list
-  public LinkList(int dd) // constructor
-  { data = dd; }
-} 
-class LinkStack
-{
-  private LinkList first; // ref to first item on list
-  public LinkStack() // constructor
-  {
-      first=null;
-  }
-  public boolean isEmpty()
-  {
-      return (first==null);
-  }
-  public void push(int dd)
-  {
-      LinkList s=new LinkList(dd);
-      s.next=first;
-      first=s;
-  }
-  public int pop()
-  {
-      if(first==null){
-          return -1;
-      }
-      int x=first.data;
-      first=first.next;
-      return x;
-  }
+    static class Node {
+        public int data;
+        public Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    private Node top;
+
+    public StackLinkedList() {
+        this.top = null;
+    }
+
+    public boolean isEmpty() {
+        return top == null;
+    }
+
+    public void push(int data) {
+        Node newNode = new Node(data);
+        newNode.next = top;
+        top = newNode;
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack Underflow");
+            return -1;
+        }
+        int val = top.data;
+        top = top.next;
+        return val;
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        return top.data;
+    }
+
+    public static void main(String[] args) {
+        StackLinkedList stack = new StackLinkedList();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        System.out.println("Top element: " + stack.peek());
+        System.out.println("Popped: " + stack.pop());
+        System.out.println("Top after pop: " + stack.peek());
+    }
 }

@@ -1,25 +1,38 @@
-import java.util.*;
-class Solution {
-    public boolean isValid(String s) {
-        Stack<Character>st=new Stack<>();
-        for(int i=0; i<s.length(); i++){
-            char ch=s.charAt(i);
-            if(ch=='(' || ch=='{' || ch=='['){
+package Stack;
+
+import java.util.Stack;
+
+public class ValidParentheses {
+
+    public static boolean isValid(String s) {
+        Stack<Character> st = new Stack<>();
+
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+
+            if (ch == '(' || ch == '{' || ch == '[') {
                 st.push(ch);
-            }
-            else {
-                if(st.isEmpty()){
+            } else {
+                if (st.isEmpty()) {
                     return false;
                 }
-                char top=(char)st.pop();
-                if((ch==')' && top!='(') ||
-                    (ch=='}' && top!='{') ||
-                    (ch==']' && top!='[')){
-                        return false;
-                    }
+                char top = st.pop();
+                if ((ch == ')' && top != '(') ||
+                    (ch == '}' && top != '{') ||
+                    (ch == ']' && top != '[')) {
+                    return false;
+                }
             }
         }
+
         return st.isEmpty();
-        
+    }
+
+    public static void main(String[] args) {
+        String[] tests = {"()", "()[]{}", "(]", "([)]", "{[]}"};
+
+        for (String test : tests) {
+            System.out.printf("isValid(\"%s\") = %b%n", test, isValid(test));
+        }
     }
 }

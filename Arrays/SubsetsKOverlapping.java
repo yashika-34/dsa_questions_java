@@ -1,7 +1,8 @@
-class Solution {
+package Arrays;
 
-    public int numberOfSets(int n, int k) {
+public class SubsetsKOverlapping {
 
+    public static int numberOfSets(int n, int k) {
         long MOD = 1_000_000_007L;
 
         long[][] dp = new long[n][k + 1];
@@ -13,21 +14,18 @@ class Solution {
         }
 
         for (int seg = 1; seg <= k; seg++) {
-
             for (int point = 1; point < n; point++) {
-
                 dp[point][seg] = dp[point - 1][seg];
-
-                dp[point][seg] =
-                    (dp[point][seg] +
-                     prefix[point - 1][seg - 1]) % MOD;
-
-                prefix[point][seg] =
-                    (prefix[point - 1][seg] +
-                     dp[point][seg]) % MOD;
+                dp[point][seg] = (dp[point][seg] + prefix[point - 1][seg - 1]) % MOD;
+                prefix[point][seg] = (prefix[point - 1][seg] + dp[point][seg]) % MOD;
             }
         }
 
         return (int) dp[n - 1][k];
+    }
+
+    public static void main(String[] args) {
+        int n = 4, k = 2;
+        System.out.println("Number of sets for n=" + n + ", k=" + k + ": " + numberOfSets(n, k)); // Output: 5
     }
 }

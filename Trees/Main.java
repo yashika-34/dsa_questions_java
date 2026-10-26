@@ -1,41 +1,35 @@
-import java.util.*;
+package Trees;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+import java.util.ArrayList;
+import java.util.List;
 
-    TreeNode(int val) {
-        this.val = val;
-    }
-}
+public class Main {
 
-class Solution {
-
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public static List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
         inorder(root, ans);
         return ans;
     }
 
-    private void inorder(TreeNode root, List<Integer> ans) {
+    private static void inorder(TreeNode root, List<Integer> ans) {
         if (root == null) return;
 
         inorder(root.left, ans);
         ans.add(root.val);
         inorder(root.right, ans);
     }
-}
 
-public class Main {
     public static void main(String[] args) {
-
+        // Construct sample tree:
+        //      1
+        //       \
+        //        2
+        //       /
+        //      3
         TreeNode root = new TreeNode(1);
         root.right = new TreeNode(2);
         root.right.left = new TreeNode(3);
 
-        Solution obj = new Solution();
-
-        System.out.println(obj.inorderTraversal(root));
+        System.out.println("Inorder Traversal: " + inorderTraversal(root));
     }
 }

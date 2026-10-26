@@ -1,4 +1,6 @@
 
+package Stack;
+
 public class StackArray {
    private int maxSize;
    private int[] stackArray;

@@ -1,8 +1,13 @@
-class Solution {
-    public void rotate(int[][] matrix) {
+package Arrays;
+
+import java.util.Arrays;
+
+public class RotateImage {
+
+    public static void rotate(int[][] matrix) {
         int n = matrix.length;
 
-        // Transpose
+        // Step 1: Transpose matrix
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 int temp = matrix[i][j];
@@ -11,18 +16,30 @@ class Solution {
             }
         }
 
-        // Reverse every row
+        // Step 2: Reverse every row
         for (int i = 0; i < n; i++) {
             int left = 0, right = n - 1;
-
             while (left < right) {
                 int temp = matrix[i][left];
                 matrix[i][left] = matrix[i][right];
                 matrix[i][right] = temp;
-
                 left++;
                 right--;
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        rotate(matrix);
+        System.out.println("Rotated Matrix 90° clockwise:");
+        for (int[] row : matrix) {
+            System.out.println(Arrays.toString(row));
         }
     }
 }

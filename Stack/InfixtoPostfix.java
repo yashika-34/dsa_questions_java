@@ -1,4 +1,6 @@
 
+package Stack;
+
 public class InfixtoPostfix {
     static class CQStack {
         public int maxSize;

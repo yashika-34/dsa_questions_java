@@ -1,6 +1,11 @@
-import java.util.*;
-class Solution {
-    public int minSumOfLengths(int[] arr, int target) {
+package Arrays;
+
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class TargetSum1477 {
+
+    public static int minSumOfLengths(int[] arr, int target) {
         int n = arr.length;
 
         int[] best = new int[n];
@@ -32,5 +37,11 @@ class Solution {
         }
 
         return answer == Integer.MAX_VALUE ? -1 : answer;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {3, 2, 2, 4, 3};
+        int target = 3;
+        System.out.println("Min sum of lengths for target " + target + ": " + minSumOfLengths(arr, target)); // Output: 2
     }
 }

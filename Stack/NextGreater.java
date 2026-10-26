@@ -1,23 +1,37 @@
-import java.util.*;
+package Stack;
 
-class Result{
-  static void printNextGreaterElement(int arr[],int n){
-Stack<Integer>st=new Stack<>();
-      int ans[]=new int [n];
-    for(int i=n-1; i>=0; i--){
-        while(!st.isEmpty() && st.peek()<=arr[i]){
-            st.pop();
+import java.util.Arrays;
+import java.util.Stack;
+
+public class NextGreater {
+
+    public static int[] getNextGreaterElements(int[] arr) {
+        int n = arr.length;
+        Stack<Integer> st = new Stack<>();
+        int[] ans = new int[n];
+
+        for (int i = n - 1; i >= 0; i--) {
+            while (!st.isEmpty() && st.peek() <= arr[i]) {
+                st.pop();
+            }
+
+            if (st.isEmpty()) {
+                ans[i] = -1;
+            } else {
+                ans[i] = st.peek();
+            }
+
+            st.push(arr[i]);
         }
-        if(st.isEmpty()){
-            ans[i]=-1;
-        }
-        else{
-           ans[i]=st.peek(); 
-        }
-        st.push(arr[i]);
+
+        return ans;
     }
-      for(int i=0; i<n; i++){
-          System.out.print(ans[i]+" ");
-      }
-  }
+
+    public static void main(String[] args) {
+        int[] arr = {4, 5, 2, 25};
+        int[] result = getNextGreaterElements(arr);
+
+        System.out.println("Array: " + Arrays.toString(arr));
+        System.out.println("Next Greater Elements: " + Arrays.toString(result));
+    }
 }

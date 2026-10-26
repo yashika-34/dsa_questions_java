@@ -2,19 +2,32 @@ package Strings;
 
 import java.util.Arrays;
 
-class Solution {
-    public boolean isAnagram(String s, String t) {
+public class ValidAnagrams {
 
+    public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
         }
 
-        char[] word1 = s.toCharArray();
-        char[] word2 = t.toCharArray();
+        // Frequency array approach (O(1) space)
+        int[] count = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i) - 'a']++;
+            count[t.charAt(i) - 'a']--;
+        }
 
-        Arrays.sort(word1);
-        Arrays.sort(word2);
+        for (int c : count) {
+            if (c != 0) return false;
+        }
 
-        return Arrays.equals(word1, word2);
+        return true;
+    }
+
+    public static void main(String[] args) {
+        String s1 = "anagram", t1 = "nagaram";
+        String s2 = "rat", t2 = "car";
+
+        System.out.printf("isAnagram(\"%s\", \"%s\") = %b%n", s1, t1, isAnagram(s1, t1));
+        System.out.printf("isAnagram(\"%s\", \"%s\") = %b%n", s2, t2, isAnagram(s2, t2));
     }
 }
