@@ -2,8 +2,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Problems%20Solved-65%2B-brightgreen?style=for-the-badge" alt="Problems Solved" />
-  <img src="https://img.shields.io/badge/Topics-7-blue?style=for-the-badge" alt="Topics" />
+  <img src="https://img.shields.io/badge/Problems%20Solved-78-brightgreen?style=for-the-badge" alt="Problems Solved" />
+  <img src="https://img.shields.io/badge/Topics-8-blue?style=for-the-badge" alt="Topics" />
   <img src="https://img.shields.io/badge/Architecture-Modular%20Guides-purple?style=for-the-badge" alt="Modular Architecture" />
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License" />
   <img src="https://img.shields.io/badge/Status-Actively%20Practicing-orange?style=for-the-badge" alt="Status" />
@@ -22,11 +22,12 @@ Every topic folder contains its own dedicated technical study guide and problem 
 | 📦 **Arrays** | [`Arrays/`](./Arrays) | 30 | [📖 View Documentation](./Arrays/README.md) | Two Pointers, Sliding Window, Prefix Sums, Kadane's |
 | 🔗 **Linked Lists** | [`LinkedList/`](./LinkedList) | 10 | [📖 View Documentation](./LinkedList/README.md) | Floyd's Cycle, k-Group Reversal, Merging & Two Pointers |
 | 📚 **Stack** | [`Stack/`](./Stack) | 9 | [📖 View Documentation](./Stack/README.md) | Monotonic Stack, Infix/Postfix, Bracket Matching |
+| 🚶‍♂️ **Queue** | [`Queue/`](./Queue) | 9 | [📖 View Documentation](./Queue/README.md) | FIFO Operations, Circular Arrays, Sliding Window, Stream Processing |
 | 🔤 **Strings** | [`Strings/`](./Strings) | 3 | [📖 View Documentation](./Strings/README.md) | Anagrams, String Parsing, Pattern Matching |
 | 🌳 **Trees** | [`Trees/`](./Trees) | 4 | [📖 View Documentation](./Trees/README.md) | Binary Tree Traversals, LCA, Maximum Depth |
 | ⛰️ **Heaps** | [`heaps/`](./heaps) | 8 | [📖 View Documentation](./heaps/README.md) | Min/Max Heap, Heap Sort, Heapify, K Largest Elements |
 | 🔄 **Recursion** | [`recursion/`](./recursion) | 5 | [📖 View Documentation](./recursion/README.md) | Backtracking, N-Queens, Sudoku Solver, Subsets |
-| **Total** | | **69** | **7 Comprehensive Guides** | |
+| **Total** | | **78** | **8 Comprehensive Guides** | |
 
 ---
 
@@ -37,6 +38,7 @@ Each topic folder includes a standalone technical guide containing theory, core 
 - [**📦 Arrays Documentation**](./Arrays/README.md): Two pointers, sliding window technique, Kadane's algorithm, prefix sums, and Boyer-Moore voting.
 - [**🔗 Linked Lists Documentation**](./LinkedList/README.md): Singly linked list architecture, Floyd's cycle detection, in-place 3-pointer reversal, and k-group reversal.
 - [**📚 Stack Documentation**](./Stack/README.md): Array & Linked List stack implementations, monotonic stacks for Next Greater Element, and arithmetic expression evaluation.
+- [**🚶‍♂️ Queue Documentation**](./Queue/README.md): Array & Linked List queues, sliding window first negative, stream processing with frequency counts, and dual-stack queue design.
 - [**🔤 Strings Documentation**](./Strings/README.md): Character frequency arrays, `atoi` parsing with overflow detection, and pattern matching.
 - [**🌳 Binary Trees Documentation**](./Trees/README.md): `TreeNode` structure, recursive DFS traversals (Inorder, Preorder, Postorder), maximum depth, and Lowest Common Ancestor.
 - [**⛰️ Heaps Documentation**](./heaps/README.md): Complete binary tree array indexing, Min/Max Heap from scratch, downward heapify, $O(N)$ build heap, and Heap Sort.
@@ -51,6 +53,7 @@ dsa_questions_java/
 ├── Arrays/          # 30 problems + README.md (Two Pointers, Prefix Sums, Kadane's)
 ├── LinkedList/      # 10 problems + README.md (Cycle Detection, Reversals)
 ├── Stack/           # 9 problems  + README.md (Monotonic Stack, Infix/Postfix)
+├── Queue/           # 9 problems  + README.md (FIFO, Sliding Window, Queue via Stacks)
 ├── Strings/         # 3 problems  + README.md (Anagrams, String Parsing)
 ├── Trees/           # 4 problems  + README.md (DFS Traversals, LCA, Max Depth)
 ├── heaps/           # 8 problems  + README.md (Min/Max Heap, Heap Sort)
@@ -139,6 +142,24 @@ dsa_questions_java/
 </details>
 
 <details open>
+<summary><b>🚶‍♂️ Queue (9 Solutions) — <a href="Queue/README.md">View Topic Guide</a></b></summary>
+<br>
+
+| Problem / File | Concept / Description |
+|---|---|
+| [`QueueArray.java`](Queue/QueueArray.java) | Queue implementation from scratch using dynamic arrays |
+| [`QueueLinkedList.java`](Queue/QueueLinkedList.java) | Queue implementation from scratch using Linked List nodes |
+| [`ReverseQueue.java`](Queue/ReverseQueue.java) | Queue reversal using an auxiliary Stack |
+| [`ReverseFirstKElements.java`](Queue/ReverseFirstKElements.java) | Reverse first $K$ elements of Queue using Stack |
+| [`QueueUsingStacks.java`](Queue/QueueUsingStacks.java) | LeetCode 232: Implement Queue using Stacks |
+| [`StackUsingQueues.java`](Queue/StackUsingQueues.java) | LeetCode 225: Implement Stack using Queues |
+| [`FirstNegativeWindow.java`](Queue/FirstNegativeWindow.java) | First negative integer in every window of size $K$ (Sliding Window) |
+| [`FirstNonRepeating.java`](Queue/FirstNonRepeating.java) | First non-repeating character in a stream of characters |
+| [`GenerateBinaryNumbers.java`](Queue/GenerateBinaryNumbers.java) | Generate binary numbers from 1 to $N$ using Queue BFS |
+
+</details>
+
+<details open>
 <summary><b>⛰️ Heaps & Priority Queues (8 Solutions) — <a href="heaps/README.md">View Topic Guide</a></b></summary>
 <br>
 
@@ -213,7 +234,7 @@ git clone https://github.com/yashika-34/dsa_questions_java.git
 cd dsa_questions_java
 ```
 
-### 2. Standalone Programs (e.g., Arrays, LinkedList, Stack, Strings, Recursion)
+### 2. Standalone Programs (e.g., Arrays, LinkedList, Stack, Queue, Strings, Recursion)
 ```bash
 # Compile
 javac Arrays/TwoSum.java
@@ -222,14 +243,16 @@ javac Arrays/TwoSum.java
 java Arrays.TwoSum
 ```
 
-### 3. Packaged Programs (e.g., Heaps)
-Files inside the `heaps/` directory belong to `package heaps;`. Always compile and execute them from the repository root:
+### 3. Packaged Programs (e.g., Heaps, Queue, Stack)
+Files inside directories with package declarations (such as `package heaps;` or `package Queue;`) should be compiled and executed from the repository root:
 ```bash
 # Compile
 javac heaps/MinHeap.java
+javac Queue/QueueArray.java
 
 # Run
 java heaps.MinHeap
+java Queue.QueueArray
 ```
 
 ---
@@ -239,6 +262,7 @@ java heaps.MinHeap
 - [x] Master Arrays & Two-Pointer techniques
 - [x] Singly Linked List operations, reversals, and cycle detection
 - [x] Stack applications (LIFO, conversions, monotonic patterns)
+- [x] Queue applications (FIFO, sliding window, stream processing, two-stack design)
 - [x] Binary Trees and common traversals (DFS, LCA)
 - [x] Binary Heaps from scratch, Heapify, and Heap Sort
 - [x] Classic Backtracking (N-Queens, Sudoku, Subsets)
